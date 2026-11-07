@@ -1,7 +1,7 @@
 /* MRB hero — real-time 3D mixed-reality headset: fly-in, drag to spin, exploded view on scroll */
 import * as THREE from "three";
-import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
-import { RoundedBoxGeometry } from "three/addons/geometries/RoundedBoxGeometry.js";
+import { RoomEnvironment } from "./RoomEnvironment.js";
+import { RoundedBoxGeometry } from "./RoundedBoxGeometry.js";
 
 const host = document.querySelector("[data-hero3d]");
 const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;

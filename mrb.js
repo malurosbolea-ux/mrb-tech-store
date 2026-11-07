@@ -9,7 +9,7 @@
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const fine = matchMedia("(hover:hover) and (pointer:fine)").matches;
   const PRODUCTS = window.MRB_PRODUCTS || [];
-  const IMG = "assets/img/";
+  const IMG = "";
   const page = d.body.dataset.page || "home";
 
   /* ---------------- i18n ---------------- */

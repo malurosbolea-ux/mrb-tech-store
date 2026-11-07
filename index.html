@@ -9,14 +9,14 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="MRB — Wear the future.">
 <meta property="og:description" content="Human senses. Machine speed. Next-gen VR, audio, wearables and AI hardware, tested in Madrid.">
-<meta property="og:image" content="assets/img/og.jpg">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="preload" href="assets/fonts/orbitron-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/michroma-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/mrb.css">
+<meta property="og:image" content="og.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="orbitron-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="michroma-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="mrb.css">
 <script>document.documentElement.classList.add("js");setTimeout(function(){var i=document.getElementById("intro");if(i&&!window.MRB)i.classList.add("is-done")},6000)</script>
-<script type="importmap">{"imports":{"three":"./assets/vendor/three.module.min.js","three/addons/":"./assets/vendor/addons/"}}</script>
+<script type="importmap">{"imports":{"three":"./three.module.min.js"}}</script>
 </head>
 <body data-page="home" data-title-es="MRB — Tienda de tecnología de próxima generación · VR, audio, wearables e IA · Madrid">
 <div class="intro" id="intro" aria-hidden="true"><div class="intro__door intro__door--t"></div><div class="intro__door intro__door--b"></div></div>
@@ -33,7 +33,7 @@
       <div class="hero__grid" aria-hidden="true"></div>
       <div class="hero__rings" aria-hidden="true"><svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="98" stroke="rgba(127,232,255,0.5)" stroke-width=".4" stroke-dasharray="1 5"/><circle cx="100" cy="2" r="1.4" fill="#7fe8ff"/><path d="M100 -2v8M-2 100h8" stroke="#7fe8ff" stroke-width=".5"/></svg><svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="98" stroke="rgba(127,232,255,0.5)" stroke-width=".4" stroke-dasharray="60 10 6 10"/><circle cx="100" cy="2" r="1.4" fill="#7fe8ff"/><path d="M100 -2v8M-2 100h8" stroke="#7fe8ff" stroke-width=".5"/></svg><svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="98" stroke="rgba(127,232,255,0.6)" stroke-width=".4" stroke-dasharray="3 3"/><circle cx="100" cy="2" r="1.4" fill="#7fe8ff"/><path d="M100 -2v8M-2 100h8" stroke="#7fe8ff" stroke-width=".5"/></svg></div>
       <div class="hero__3d" data-hero3d aria-hidden="true" data-cursor="Drag"></div>
-      <img class="hero__fallback" src="assets/img/horizon.webp" alt="" aria-hidden="true">
+      <img class="hero__fallback" src="horizon.webp" alt="" aria-hidden="true">
 
       <div class="hero__hud t-nano" aria-hidden="true">
         <span>SYS · <span style="color:var(--cyan)">ONLINE</span></span>
@@ -53,7 +53,7 @@
       <div class="hlab hlab--r" data-hlab="3" style="right:var(--pad);top:58%"><b data-es="Chip MRB X1">MRB X1 chip</b><span data-es="Doble núcleo de IA espacial">Dual spatial-AI core</span></div>
 
       <a class="hero__tag" href="shop.html" data-qv="horizon-x" data-hero-tag data-rv style="--rv-delay:900ms">
-        <img src="assets/img/horizon-sm.webp" alt="MRB Horizon X headset" width="72" height="72">
+        <img src="horizon-sm.webp" alt="MRB Horizon X headset" width="72" height="72">
         <span>
           <span class="t-nano live" data-es="Recién llegadas">Just landed</span>
           <b>Horizon X</b>
@@ -83,10 +83,10 @@
   <!-- ============ STATEMENT ============ -->
   <section class="section statement" aria-label="About MRB" data-statement>
     <div class="floaters" aria-hidden="true">
-      <div class="floater" data-speed="-120" style="left:6%;top:12%;transform:rotate(-8deg)"><img src="assets/img/buds-sm.webp" alt="" loading="lazy"></div>
-      <div class="floater" data-speed="-260" style="right:7%;top:6%;transform:rotate(7deg)"><img src="assets/img/watch-sm.webp" alt="" loading="lazy"></div>
-      <div class="floater" data-speed="-60" style="right:16%;bottom:6%;transform:rotate(-5deg)"><img src="assets/img/drone-sm.webp" alt="" loading="lazy"></div>
-      <div class="floater" data-speed="-200" style="left:12%;bottom:2%;transform:rotate(6deg)"><img src="assets/img/chip-core-sm.webp" alt="" loading="lazy"></div>
+      <div class="floater" data-speed="-120" style="left:6%;top:12%;transform:rotate(-8deg)"><img src="buds-sm.webp" alt="" loading="lazy"></div>
+      <div class="floater" data-speed="-260" style="right:7%;top:6%;transform:rotate(7deg)"><img src="watch-sm.webp" alt="" loading="lazy"></div>
+      <div class="floater" data-speed="-60" style="right:16%;bottom:6%;transform:rotate(-5deg)"><img src="drone-sm.webp" alt="" loading="lazy"></div>
+      <div class="floater" data-speed="-200" style="left:12%;bottom:2%;transform:rotate(6deg)"><img src="chip-core-sm.webp" alt="" loading="lazy"></div>
     </div>
     <div class="wrap grid">
       <div style="grid-column:1/4"><p class="label"><span data-scramble data-es="Una tienda líquida">A liquid store</span></p></div>
@@ -112,7 +112,7 @@
   <section class="depth" data-depth aria-labelledby="dpa-t" style="--fy:55%">
     <div class="depth__stage">
       <div class="depth__media">
-        <img src="assets/img/highway.webp" alt="Neon light trails along a futuristic highway" loading="lazy" width="1080" height="1350">
+        <img src="highway.webp" alt="Neon light trails along a futuristic highway" loading="lazy" width="1080" height="1350">
         <div class="depth__strips" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         <div class="scan"></div>
       </div>
@@ -130,12 +130,12 @@
         <p class="label"><span data-scramble data-es="Compra por mundo">Shop by world</span></p>
         <h2 class="f-display t-h1" id="worlds-t" data-split data-es="Seis mundos<br>del mañana." style="margin-top:20px">Six worlds<br>of next.</h2>
         <div class="fv__show" aria-hidden="true">
-          <img class="is-on" src="assets/img/neon-2.webp" alt="" loading="lazy">
-          <img src="assets/img/aura.webp" alt="" loading="lazy">
-          <img src="assets/img/watch-2.webp" alt="" loading="lazy">
-          <img src="assets/img/drone.webp" alt="" loading="lazy">
-          <img src="assets/img/brain.webp" alt="" loading="lazy">
-          <img src="assets/img/gamer.webp" alt="" loading="lazy">
+          <img class="is-on" src="neon-2.webp" alt="" loading="lazy">
+          <img src="aura.webp" alt="" loading="lazy">
+          <img src="watch-2.webp" alt="" loading="lazy">
+          <img src="drone.webp" alt="" loading="lazy">
+          <img src="brain.webp" alt="" loading="lazy">
+          <img src="gamer.webp" alt="" loading="lazy">
           <span class="fv__n tnum" data-fv-n>01</span>
         </div>
       </div>
@@ -190,7 +190,7 @@
   <section class="depth" data-depth aria-labelledby="dpb-t" style="--fy:28%">
     <div class="depth__stage">
       <div class="depth__media">
-        <img src="assets/img/neon-1.webp" alt="Portrait of a person wearing a neon-lit VR headset" loading="lazy" width="1080" height="1350">
+        <img src="neon-1.webp" alt="Portrait of a person wearing a neon-lit VR headset" loading="lazy" width="1080" height="1350">
         <div class="depth__strips" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         <div class="scan"></div>
       </div>
@@ -268,7 +268,7 @@
         <a class="dev" href="vr-demo.html#book" data-cursor="Book" aria-label="Open the booking page">
           <div class="dev__bar"><span class="dev__dots"><i></i><i></i><i></i></span><span class="dev__addr">mrb.store/vr-demo</span></div>
           <div class="dev__body">
-            <div class="dev__img"><img src="assets/img/vr-woman.webp" alt="Person trying a VR headset" loading="lazy"></div>
+            <div class="dev__img"><img src="vr-woman.webp" alt="Person trying a VR headset" loading="lazy"></div>
             <div class="dev__ui">
               <span class="t-nano" style="color:var(--cyan)" data-es="Reserva · Horizon X">Booking · Horizon X</span>
               <b class="f-display" style="font-size:22px;letter-spacing:-.03em" data-es="Elige un día">Pick a day</b>
@@ -320,13 +320,13 @@
 
 <footer id="site-foot"></footer>
 
-<script src="assets/vendor/gsap.min.js" defer></script>
-<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
-<script src="assets/vendor/lenis.min.js" defer></script>
-<script src="assets/js/products.js" defer></script>
-<script src="assets/js/mrb.js" defer></script>
-<script src="assets/js/pages.js" defer></script>
-<script src="assets/js/home.js" defer></script>
-<script type="module" src="assets/js/hero3d.js"></script>
+<script src="gsap.min.js" defer></script>
+<script src="ScrollTrigger.min.js" defer></script>
+<script src="lenis.min.js" defer></script>
+<script src="products.js" defer></script>
+<script src="mrb.js" defer></script>
+<script src="pages.js" defer></script>
+<script src="home.js" defer></script>
+<script type="module" src="hero3d.js"></script>
 </body>
 </html>
