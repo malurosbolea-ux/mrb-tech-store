@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MRB — Next-gen tech store · VR, audio, wearables &amp; AI hardware · Madrid</title>
+<meta name="description" content="MRB is a next-gen tech store in Madrid: mixed-reality headsets, spatial audio, wearables, drones and AI hardware. Try the future in our lab before you buy it. Concept brand by María Luisa Ros Bolea.">
+<meta name="theme-color" content="#02040b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MRB — Wear the future.">
+<meta property="og:description" content="Human senses. Machine speed. Next-gen VR, audio, wearables and AI hardware, tested in Madrid.">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/orbitron-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/michroma-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/mrb.css">
+<script>document.documentElement.classList.add("js");setTimeout(function(){var i=document.getElementById("intro");if(i&&!window.MRB)i.classList.add("is-done")},6000)</script>
+<script type="importmap">{"imports":{"three":"./assets/vendor/three.module.min.js","three/addons/":"./assets/vendor/addons/"}}</script>
+</head>
+<body data-page="home" data-title-es="MRB — Tienda de tecnología de próxima generación · VR, audio, wearables e IA · Madrid">
+<div class="intro" id="intro" aria-hidden="true"><div class="intro__door intro__door--t"></div><div class="intro__door intro__door--b"></div></div>
+
+
+<canvas class="sf" aria-hidden="true"></canvas>
+
+<main id="main">
+
+  <!-- ============ HERO (pinned · exploded view) ============ -->
+  <section class="hero" aria-labelledby="hero-t" id="hero" data-hero>
+    <div class="hero__pin">
+      <div class="hero__orb" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__rings" aria-hidden="true"><svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="98" stroke="rgba(127,232,255,0.5)" stroke-width=".4" stroke-dasharray="1 5"/><circle cx="100" cy="2" r="1.4" fill="#7fe8ff"/><path d="M100 -2v8M-2 100h8" stroke="#7fe8ff" stroke-width=".5"/></svg><svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="98" stroke="rgba(127,232,255,0.5)" stroke-width=".4" stroke-dasharray="60 10 6 10"/><circle cx="100" cy="2" r="1.4" fill="#7fe8ff"/><path d="M100 -2v8M-2 100h8" stroke="#7fe8ff" stroke-width=".5"/></svg><svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="98" stroke="rgba(127,232,255,0.6)" stroke-width=".4" stroke-dasharray="3 3"/><circle cx="100" cy="2" r="1.4" fill="#7fe8ff"/><path d="M100 -2v8M-2 100h8" stroke="#7fe8ff" stroke-width=".5"/></svg></div>
+      <div class="hero__3d" data-hero3d aria-hidden="true" data-cursor="Drag"></div>
+      <img class="hero__fallback" src="assets/img/horizon.webp" alt="" aria-hidden="true">
+
+      <div class="hero__hud t-nano" aria-hidden="true">
+        <span>SYS · <span style="color:var(--cyan)">ONLINE</span></span>
+        <span>40.4310 N / 3.7040 W</span>
+        <span>RENDER · 120 FPS</span>
+      </div>
+
+      <div class="hero__exploded" data-exploded>
+        <p class="label"><span data-es="Vista explosionada · Horizon X">Exploded view · Horizon X</span></p>
+        <h2 class="f-display" style="margin-top:14px" data-es="Cada pieza,<br>a la vista.">Every part,<br>in plain sight.</h2>
+        <p class="dim" style="margin-top:14px;max-width:34ch" data-es="Sigue bajando: las gafas se abren delante de ti. Arrastra para girarlas.">Keep scrolling: the headset opens up in front of you. Drag to spin it.</p>
+      </div>
+      <svg class="hlines" data-hlines aria-hidden="true"><line/><line/><line/><line/><circle r="5"/><circle r="5"/><circle r="5"/><circle r="5"/></svg>
+      <div class="hlab" data-hlab="0" style="left:var(--pad);top:60%"><b>2× 4K micro-OLED</b><span data-es="Lentes pancake · 118°">Pancake lenses · 118°</span></div>
+      <div class="hlab" data-hlab="1" style="left:var(--pad);top:76%"><b data-es="Seguimiento ocular">Eye tracking</b><span data-es="Render foveal en tiempo real">Real-time foveated render</span></div>
+      <div class="hlab hlab--r" data-hlab="2" style="right:var(--pad);top:30%"><b data-es="Batería hot-swap">Hot-swap battery</b><span>3 h · USB-C 65 W</span></div>
+      <div class="hlab hlab--r" data-hlab="3" style="right:var(--pad);top:58%"><b data-es="Chip MRB X1">MRB X1 chip</b><span data-es="Doble núcleo de IA espacial">Dual spatial-AI core</span></div>
+
+      <a class="hero__tag" href="shop.html" data-qv="horizon-x" data-hero-tag data-rv style="--rv-delay:900ms">
+        <img src="assets/img/horizon-sm.webp" alt="MRB Horizon X headset" width="72" height="72">
+        <span>
+          <span class="t-nano live" data-es="Recién llegadas">Just landed</span>
+          <b>Horizon X</b>
+          <span class="t-micro dim" data-es="Realidad mixta · desde 1.499 €">Mixed reality · from €1,499</span>
+        </span>
+      </a>
+
+      <div class="wrap hero__content" data-hero-content>
+        <h1 class="hero__title" id="hero-t" data-split data-es="Ponte el<br>futuro<span class='dot'>.</span>">Wear the<br>future<span class="dot">.</span></h1>
+        <p class="hero__claim" data-split data-es="Sentidos humanos.<br><span class='o'>Velocidad máquina.</span>" style="--d:250ms">Human senses.<br><span class="o">Machine speed.</span></p>
+        <div class="row hero__cta" data-rv style="--rv-delay:500ms">
+          <a class="btn btn--primary" href="shop.html" data-magnetic><span class="roll"><span data-es="Ver la colección">Shop the drop</span><span aria-hidden="true" data-es="Ver la colección">Shop the drop</span></span><span class="btn__ico"><svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a>
+          <a class="btn btn--ghost" href="vr-demo.html#book" data-magnetic><span class="roll"><span data-es="Reserva una demo VR">Book a VR demo</span><span aria-hidden="true" data-es="Reserva una demo VR">Book a VR demo</span></span><span class="btn__ico"><svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a>
+        </div>
+        <div class="hero__foot t-micro">
+          <span class="scroll-cue" aria-hidden="true"><i></i><span data-es="Desliza para abrirlas">Scroll to open it up</span></span>
+        </div>
+      </div>
+
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="badgeC" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><text><textPath href="#badgeC">MRB · next-gen tech · Madrid · est. 2026 ·</textPath></text></svg>
+        <span class="badge__c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v16M5 13l7 7 7-7"/></svg></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATEMENT ============ -->
+  <section class="section statement" aria-label="About MRB" data-statement>
+    <div class="floaters" aria-hidden="true">
+      <div class="floater" data-speed="-120" style="left:6%;top:12%;transform:rotate(-8deg)"><img src="assets/img/buds-sm.webp" alt="" loading="lazy"></div>
+      <div class="floater" data-speed="-260" style="right:7%;top:6%;transform:rotate(7deg)"><img src="assets/img/watch-sm.webp" alt="" loading="lazy"></div>
+      <div class="floater" data-speed="-60" style="right:16%;bottom:6%;transform:rotate(-5deg)"><img src="assets/img/drone-sm.webp" alt="" loading="lazy"></div>
+      <div class="floater" data-speed="-200" style="left:12%;bottom:2%;transform:rotate(6deg)"><img src="assets/img/chip-core-sm.webp" alt="" loading="lazy"></div>
+    </div>
+    <div class="wrap grid">
+      <div style="grid-column:1/4"><p class="label"><span data-scramble data-es="Una tienda líquida">A liquid store</span></p></div>
+      <div style="grid-column:4/13" class="stack" >
+        <p class="statement__text" data-scrub data-es="Una tienda que toma la forma de tu <span class='rot acc' data-rot><span class='rot__i is-on'>setup.</span><span class='rot__i'>partida.</span><span class='rot__i'>estudio.</span><span class='rot__i'>salón.</span><span class='rot__i'>próximo mundo.</span></span>">One store that takes the shape of your <span class="rot acc" data-rot><span class="rot__i is-on">setup.</span><span class="rot__i">game.</span><span class="rot__i">studio.</span><span class="rot__i">living room.</span><span class="rot__i">next world.</span></span></p>
+        <p class="statement__sub t-nano" data-rv style="--s:36px"><span data-es="Hardware seleccionado">Curated hardware</span><span data-es="Probado por humanos">Tested by humans</span><span data-es="Entregado en 48 h">Delivered in 48 h</span></p>
+        <p class="t-lead dim measure" data-rv data-es="Probamos cada objeto en nuestro laboratorio de Madrid antes de que llegue a la estantería. Si no nos hace decir «guau», no entra. Una tienda, un equipo y una sala de demos donde pruebas el futuro antes de pagarlo.">We test every object in our Madrid lab before it reaches the shelf. If it does not make us say “wow”, it does not make the cut. One store, one team, and a demo room where you try the future before you pay for it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KINETIC ============ -->
+  <section class="kin" data-kin aria-labelledby="kin-t">
+    <div class="kin__pin">
+      <canvas class="kin__globe" data-globe aria-hidden="true"></canvas>
+      <div class="kin__meta t-nano" aria-hidden="true"><span data-es="Señal · Madrid → mundo">Signal · Madrid → world</span><span class="tnum" data-kin-n>000</span></div>
+      <h2 class="kin__word" id="kin-t" data-kin-word data-es="El futuro<br>es ahora.">Next is<br>now.</h2>
+      <p class="kin__sub t-nano" data-es="Diseñado en Madrid · Entregado al futuro">Built in Madrid · Shipped to the future</p>
+    </div>
+  </section>
+
+  <!-- ============ DEPTH 1 ============ -->
+  <section class="depth" data-depth aria-labelledby="dpa-t" style="--fy:55%">
+    <div class="depth__stage">
+      <div class="depth__media">
+        <img src="assets/img/highway.webp" alt="Neon light trails along a futuristic highway" loading="lazy" width="1080" height="1350">
+        <div class="depth__strips" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="scan"></div>
+      </div>
+      <div class="depth__hud" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="depth__meta t-nano" aria-hidden="true"><span data-es="Fig. 01 · Estudio de latencia">Fig. 01 · Latency study</span><span class="tnum" data-depth-n>000</span></div>
+      <h2 class="depth__title" id="dpa-t" data-split data-es="Hecho para<br>la velocidad.">Built for<br>speed.</h2>
+      <p class="depth__cap t-nano"><span data-es="Sin lag · Todo a 120 Hz">Zero-lag tested ·</span><span data-es="Medido en el MRB Lab">120 Hz everything</span></p>
+    </div>
+  </section>
+
+  <!-- ============ WORLDS ============ -->
+  <section class="section" id="worlds" aria-labelledby="worlds-t">
+    <div class="wrap fv__grid">
+      <div class="fv__head">
+        <p class="label"><span data-scramble data-es="Compra por mundo">Shop by world</span></p>
+        <h2 class="f-display t-h1" id="worlds-t" data-split data-es="Seis mundos<br>del mañana." style="margin-top:20px">Six worlds<br>of next.</h2>
+        <div class="fv__show" aria-hidden="true">
+          <img class="is-on" src="assets/img/neon-2.webp" alt="" loading="lazy">
+          <img src="assets/img/aura.webp" alt="" loading="lazy">
+          <img src="assets/img/watch-2.webp" alt="" loading="lazy">
+          <img src="assets/img/drone.webp" alt="" loading="lazy">
+          <img src="assets/img/brain.webp" alt="" loading="lazy">
+          <img src="assets/img/gamer.webp" alt="" loading="lazy">
+          <span class="fv__n tnum" data-fv-n>01</span>
+        </div>
+      </div>
+      <div>
+        <div class="fv__list">
+          <a class="srow is-on" href="shop.html?c=vr" data-srow="0" data-rv><span class="srow__n t-nano tnum">01</span><span class="srow__t" data-es="VR y realidad mixta">VR &amp; mixed reality</span><span class="srow__d" data-es="Gafas que hacen desaparecer la habitación, con una visión del entorno tan nítida que olvidas la pantalla.">Headsets that make rooms disappear, with pass-through so sharp you forget the screen.</span><span class="srow__go">↗</span></a>
+          <a class="srow" href="shop.html?c=audio" data-srow="1" data-rv><span class="srow__n t-nano tnum">02</span><span class="srow__t">Audio</span><span class="srow__d" data-es="Sonido espacial, cancelación de ruido adaptativa y una latencia tan baja que vale para competir.">Spatial sound, adaptive noise cancelling and latency low enough for competitive play.</span><span class="srow__go">↗</span></a>
+          <a class="srow" href="shop.html?c=wear" data-srow="2" data-rv><span class="srow__n t-nano tnum">03</span><span class="srow__t">Wearables</span><span class="srow__d" data-es="Titanio en la muñeca que mide, desbloquea y te recuerda que ya toca dormir.">Titanium on your wrist that tracks, unlocks and gently tells you to go to sleep.</span><span class="srow__go">↗</span></a>
+          <a class="srow" href="shop.html?c=drone" data-srow="3" data-rv><span class="srow__n t-nano tnum">04</span><span class="srow__t">Drones</span><span class="srow__d" data-es="Drones de bolsillo con sensores de cine y modo de vuelo en primera persona.">Pocket-sized flyers with cinema sensors and a first-person goggles mode.</span><span class="srow__go">↗</span></a>
+          <a class="srow" href="shop.html?c=ai" data-srow="4" data-rv><span class="srow__n t-nano tnum">05</span><span class="srow__t" data-es="Hardware IA">AI hardware</span><span class="srow__d" data-es="Ejecuta tus propios modelos en casa: aceleradores, tarjetas neuronales y equipos preparados para IA.">Run your own models at home: accelerators, neural cards and AI-ready builds.</span><span class="srow__go">↗</span></a>
+          <a class="srow" href="lab.html" data-srow="5" data-rv><span class="srow__n t-nano tnum">06</span><span class="srow__t" data-es="Puestos de batalla">Battle stations</span><span class="srow__d" data-es="PCs y setups a medida, montados, calibrados y con los cables bien recogidos por nuestro lab.">Custom PC builds and set-ups, configured and cable-managed by our lab.</span><span class="srow__go">↗</span></a>
+        </div>
+        <p style="margin-top:28px"><a class="link link--under" href="shop.html"><span data-es="Ver el catálogo completo">Browse the full catalogue</span> <svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="mq" data-marquee data-cursor="Drag" aria-hidden="true">
+    <div class="mq__track">
+      <span data-es="Envío en 48 h">Free 48 h delivery</span><i class="mq__dot"></i>
+      <span data-es="Prueba antes de comprar">Try before you buy</span><i class="mq__dot"></i>
+      <span data-es="2 años de MRB Care">2-year MRB Care</span><i class="mq__dot"></i>
+      <span data-es="Financiación al 0 %">0% financing</span><i class="mq__dot"></i>
+    </div>
+  </div>
+
+  <!-- ============ ORBIT (3D product ring) ============ -->
+  <section class="orbit" id="drop" data-orbit aria-labelledby="drop-t">
+    <div class="orbit__pin">
+      <div class="orbit__num tnum" data-orbit-num aria-hidden="true">01</div>
+      <div class="wrap orbit__head">
+        <div>
+          <p class="label"><span data-scramble data-es="La colección · 06 objetos">The drop · 06 objects</span></p>
+          <h2 class="f-display t-h1" id="drop-t" data-split data-es="Haz girar<br>la colección." style="margin-top:16px">Spin<br>the drop.</h2>
+        </div>
+        <a class="link link--under" href="shop.html"><span data-es="Ver todo y comparar">View all &amp; compare</span> <svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+      </div>
+      <div class="orbit__hint t-nano" aria-hidden="true"><i></i><span data-es="Desliza o arrastra para girar">Scroll or drag to spin</span><i></i></div>
+      <div class="orbit__scene" data-orbit-scene data-cursor="Drag"><div class="orbit__floor" aria-hidden="true"></div><div class="orbit__ring" data-orbit-ring></div></div>
+      <div class="wrap orbit__info" aria-live="polite">
+        <div class="orbit__txt" data-orbit-txt></div>
+        <div style="display:grid;gap:12px;justify-items:end">
+          <div class="orbit__buy" data-orbit-buy></div>
+          <div class="orbit__dots" data-orbit-dots></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEPTH 2 ============ -->
+  <section class="depth" data-depth aria-labelledby="dpb-t" style="--fy:28%">
+    <div class="depth__stage">
+      <div class="depth__media">
+        <img src="assets/img/neon-1.webp" alt="Portrait of a person wearing a neon-lit VR headset" loading="lazy" width="1080" height="1350">
+        <div class="depth__strips" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="scan"></div>
+      </div>
+      <div class="depth__hud" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="depth__meta t-nano" aria-hidden="true"><span data-es="Fig. 02 · Estudio de ergonomía">Fig. 02 · Ergonomics study</span><span class="tnum" data-depth-n>000</span></div>
+      <h2 class="depth__title" id="dpb-t" data-split data-es="Hecho para<br>llevarse.">Made to be<br>worn.</h2>
+      <p class="depth__cap t-nano"><span data-es="412 g · peso equilibrado ·">412 g · balanced ·</span><span data-es="Horas sin notarlo">Hours without noticing</span></p>
+    </div>
+  </section>
+
+  <!-- ============ TUNNEL ============ -->
+  <section class="tunnel" data-tunnel aria-labelledby="tunnel-t">
+    <div class="tunnel__stage">
+      <div class="tunnel__meta tunnel__meta--top"><div class="wrap between t-nano"><span data-es="(05) Dentro del lab">(05) Inside the lab</span><span data-es="22 fotogramas · VR, audio, IA, ciudad">22 frames · VR, audio, AI, city</span></div></div>
+      <div class="tunnel__space" data-tunnel-space></div>
+      <div class="tunnel__fog"></div>
+      <h2 class="tunnel__title" id="tunnel-t"><span data-split data-es="Los mundos<br>toman forma.">Worlds take<br>shape.</span></h2>
+      <div class="tunnel__meta tunnel__meta--bot"><div class="wrap between t-micro dim"><span data-es="Imágenes del universo MRB.">Frames from the MRB universe.</span><a class="link" href="lab.html" style="pointer-events:auto"><span data-es="Visita el lab">Visit the lab</span> <svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a></div></div>
+    </div>
+  </section>
+
+  <!-- ============ FIGURES ============ -->
+  <section class="section" aria-labelledby="fig-t">
+    <div class="wrap">
+      <div class="grid" style="margin-bottom:clamp(36px,5vw,70px)">
+        <div style="grid-column:1/8"><p class="label"><span data-scramble data-es="MRB en cifras">MRB in numbers</span></p>
+          <h2 class="f-display t-h1" id="fig-t" data-split data-es="Probado.<br>No inflado." style="margin-top:18px">Tested.<br>Not hyped.</h2></div>
+        <p style="grid-column:8/13;align-self:end" class="dim" data-rv data-es="Cifras de nuestro catálogo y servicio. Cada objeto pasa por el lab antes de aterrizar en la web.">Figures from our catalogue and service. Every object goes through the lab before it lands on the site.</p>
+      </div>
+      <ul class="kfs" aria-label="MRB in figures">
+        <li class="kf" data-rv style="--rv-delay:0ms"><span class="kf__n t-nano">01</span><p class="kf__v"><span data-count="4">4</span><span class="kf__u">K</span></p><p class="kf__t" data-es="por ojo en las Horizon X, micro-OLED">per eye on Horizon X, micro-OLED</p><span class="kf__bar"></span></li>
+        <li class="kf" data-rv style="--rv-delay:80ms"><span class="kf__n t-nano">02</span><p class="kf__v"><span data-count="120" data-count-delay="120">120</span><span class="kf__u">Hz</span></p><p class="kf__t" data-es="de refresco, porque el mareo no está de moda">refresh rate, because motion sickness is not a vibe</p><span class="kf__bar"></span></li>
+        <li class="kf" data-rv style="--rv-delay:160ms"><span class="kf__n t-nano">03</span><p class="kf__v"><span data-count="48" data-count-delay="240">48</span><span class="kf__u">h</span></p><p class="kf__t" data-es="de la tienda a tu puerta en toda la península">from our shelf to your door, anywhere in mainland Spain</p><span class="kf__bar"></span></li>
+        <li class="kf" data-rv style="--rv-delay:240ms"><span class="kf__n t-nano">04</span><p class="kf__v"><span data-count="312" data-count-delay="360">312</span></p><p class="kf__t" data-es="objetos probados este año. Solo 6 han entrado">objects tested in the lab this year. Only 6 made the cut</p><span class="kf__bar"></span></li>
+        <li class="kf" data-rv style="--rv-delay:0ms"><span class="kf__n t-nano">05</span><p class="kf__v"><span data-count="2">2</span><span class="kf__u" data-es="años">yrs</span></p><p class="kf__t" data-es="de MRB Care en todo, con un humano al teléfono">of MRB Care on everything, with a human on the line</p><span class="kf__bar"></span></li>
+        <li class="kf" data-rv style="--rv-delay:80ms"><span class="kf__n t-nano">06</span><p class="kf__v"><span data-count="30" data-count-delay="120">30</span><span class="kf__u" data-es="días">days</span></p><p class="kf__t" data-es="para cambiar de opinión, sin preguntas">to change your mind, no questions asked</p><span class="kf__bar"></span></li>
+        <li class="kf" data-rv style="--rv-delay:160ms"><span class="kf__n t-nano">07</span><p class="kf__v"><span data-count="0">0</span><span class="kf__u">%</span></p><p class="kf__t" data-es="TAE en financiación hasta 12 meses">APR financing on up to 12 instalments</p><span class="kf__bar"></span></li>
+        <li class="kf kf--note" data-rv style="--rv-delay:240ms"><p class="kf__q" data-es="Ve más allá.<br><span class='acc'>Muévete más rápido.</span>">See further.<br><span class="acc">Move faster.</span></p><a class="link link--under t-micro" href="lab.html"><span data-es="Cómo funciona el lab">How the lab works</span> <svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ WARP / PROCESS ============ -->
+  <section class="warp" data-warp aria-labelledby="warp-t">
+    <div class="warp__stage">
+      <canvas class="warp__lines" data-warp-lines aria-hidden="true"></canvas>
+      <div class="wrap" data-warp-content>
+        <p class="label"><span data-scramble data-es="Cómo funciona MRB">How MRB works</span></p>
+        <h2 class="f-display t-h1" id="warp-t" data-split data-es="Pruébalo. Ajústalo.<br>Llévatelo." style="margin-top:18px">Try. Tune.<br>Take it home.</h2>
+        <ol class="steps">
+          <li class="step"><svg class="step__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="7" width="20" height="10" rx="5"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/></svg><span class="step__n t-nano" data-es="01 / Prueba">01 / Try</span><h3 class="t-h4 f-display" data-es="Reserva una demo gratis en el lab.">Book a free demo in our lab.</h3><p data-es="30 minutos guiados, sin compromiso y con gafas desinfectadas.">30 guided minutes, no obligation, sanitised headsets.</p></li>
+          <li class="step"><svg class="step__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg><span class="step__n t-nano" data-es="02 / Ajuste">02 / Tune</span><h3 class="t-h4 f-display" data-es="Lo calibramos a tu medida.">We fit and calibrate it to you.</h3><p data-es="Distancia interpupilar, perfiles de audio y cuentas, listos.">Interpupillary distance, audio profiles and accounts, done.</p></li>
+          <li class="step"><svg class="step__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg><span class="step__n t-nano" data-es="03 / Entrega">03 / Deliver</span><h3 class="t-h4 f-display" data-es="En tu puerta en 48 h.">At your door in 48 h.</h3><p data-es="O recógelo en Fuencarral 120 cuando te venga bien.">Or pick it up at Fuencarral 120 whenever suits you.</p></li>
+          <li class="step"><svg class="step__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span class="step__n t-nano" data-es="04 / Cuidado">04 / Care</span><h3 class="t-h4 f-display" data-es="Dos años de MRB Care.">Two years of MRB Care.</h3><p data-es="Reparación, sustitución y un humano de verdad al otro lado.">Repairs, replacements and a real human on the other end.</p></li>
+        </ol>
+      </div>
+      <div class="warp__final" aria-hidden="true"><p class="warp__words"><span class="ww" data-es="Probado.">Tested.</span><span class="ww" data-es="Ajustado.">Tuned.</span><span class="ww acc" data-es="Entregado.">Delivered.</span></p></div>
+      <div class="warp__flash" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ DEMO TEASER ============ -->
+  <section class="section" aria-labelledby="demo-t">
+    <div class="wrap grid" style="align-items:center;row-gap:50px">
+      <div style="grid-column:1/6" class="stack">
+        <p class="label"><span data-scramble data-es="La sala de demos">The demo room</span></p>
+        <h2 class="f-display t-h2" id="demo-t" data-split data-es="Tus primeros<br>30 minutos<br>en Horizon X.">Your first<br>30 minutes<br>in Horizon X.</h2>
+        <p class="dim" data-rv data-es="Gratis, guiada y sin compromiso. Elige un mundo (gravedad cero, un concierto en primera fila o un estudio de diseño a escala 1:1), escoge hora y entra. Desinfectamos cada visor entre sesiones, prometido.">Free, guided and with no obligation. Pick a world (zero gravity, a front-row concert or a design studio at 1:1 scale), choose a slot and step in. We sanitise every headset between sessions, promise.</p>
+        <div class="row" data-rv>
+          <a class="btn btn--primary" href="vr-demo.html#book" data-magnetic><span class="roll"><span data-es="Reservar mi demo">Book my demo</span><span aria-hidden="true" data-es="Reservar mi demo">Book my demo</span></span><span class="btn__ico"><svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a>
+          <a class="btn btn--ghost" href="vr-demo.html#worlds"><span class="roll"><span data-es="Ver experiencias">See the experiences</span><span aria-hidden="true" data-es="Ver experiencias">See the experiences</span></span><span class="btn__ico"><svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a>
+        </div>
+      </div>
+      <div style="grid-column:7/13" data-rv>
+        <a class="dev" href="vr-demo.html#book" data-cursor="Book" aria-label="Open the booking page">
+          <div class="dev__bar"><span class="dev__dots"><i></i><i></i><i></i></span><span class="dev__addr">mrb.store/vr-demo</span></div>
+          <div class="dev__body">
+            <div class="dev__img"><img src="assets/img/vr-woman.webp" alt="Person trying a VR headset" loading="lazy"></div>
+            <div class="dev__ui">
+              <span class="t-nano" style="color:var(--cyan)" data-es="Reserva · Horizon X">Booking · Horizon X</span>
+              <b class="f-display" style="font-size:22px;letter-spacing:-.03em" data-es="Elige un día">Pick a day</b>
+              <div class="mini-cal" data-mini-cal></div>
+              <div class="slots"><span>10:30</span><span class="on">12:00</span><span>13:30</span><span>17:00</span><span>18:30</span></div>
+              <span class="btn btn--primary btn--sm" style="justify-self:start"><span class="roll"><span data-es="Confirmar">Confirm</span><span aria-hidden="true" data-es="Confirmar">Confirm</span></span><span class="btn__ico"><svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" aria-labelledby="faq-t" style="padding-top:0">
+    <div class="wrap grid" style="row-gap:40px">
+      <div style="grid-column:1/5" class="sticky-col">
+        <p class="label"><span data-scramble data-es="Preguntas">Questions</span></p>
+        <h2 class="f-display t-h1" id="faq-t" data-split data-es="Bueno<br>saberlo." style="margin-top:18px">Good to<br>know.</h2>
+      </div>
+      <div style="grid-column:6/13" class="faq">
+        <details><summary><span data-es="¿MRB es una tienda real?">Is MRB a real store?</span><span class="pm" aria-hidden="true"></span></summary><div class="a" data-es="No. MRB es una marca concepto creada por María Luisa Ros Bolea para su portfolio. Los productos, precios y la tienda son ficticios; el diseño, los textos y el código, no.">No. MRB is a concept brand created by María Luisa Ros Bolea for her portfolio. The products, prices and store are fictional; the design, copy and code are very real.</div></details>
+        <details><summary><span data-es="¿Cómo funciona la demo VR?">How does the VR demo work?</span><span class="pm" aria-hidden="true"></span></summary><div class="a" data-es="Reservas online, llegas cinco minutos antes y un especialista te ajusta las gafas. Eliges un mundo y lo vives durante 30, 45 o 60 minutos. Es gratis y no tienes que comprar nada.">You book online, arrive five minutes early and a specialist fits the headset to you. Pick a world and live in it for 30, 45 or 60 minutes. It is free, and you do not have to buy anything.</div></details>
+        <details><summary><span data-es="¿Cuánto tarda el envío?">How fast is delivery?</span><span class="pm" aria-hidden="true"></span></summary><div class="a" data-es="48 horas en la península, gratis a partir de 500 €. Al resto de la UE, de 2 a 4 días laborables. También puedes recogerlo en la tienda el mismo día.">48 hours in mainland Spain, free over €500. Rest of the EU in 2–4 working days. You can also pick up in store the same day.</div></details>
+        <details><summary><span data-es="¿Puedo devolver un producto?">Can I return something?</span><span class="pm" aria-hidden="true"></span></summary><div class="a" data-es="Tienes 30 días para cambiar de opinión. Lo recogemos en casa, lo revisamos en el lab y te devolvemos el dinero en 72 horas.">You have 30 days to change your mind. We collect it from your home, check it in the lab and refund you within 72 hours.</div></details>
+        <details><summary><span data-es="¿Ofrecéis financiación?">Do you offer financing?</span><span class="pm" aria-hidden="true"></span></summary><div class="a" data-es="Sí: hasta 12 pagos al 0 % TAE en compras desde 300 €, aprobado en el momento.">Yes: up to 12 instalments at 0% APR on orders over €300, approved at checkout.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING ============ -->
+  <section class="closing" aria-labelledby="closing-t">
+    <canvas data-planet aria-hidden="true"></canvas>
+    <div class="wrap closing__grid">
+      <div>
+        <p class="label"><span data-scramble data-es="Empieza aquí">Start here</span></p>
+        <h2 class="closing__title" id="closing-t" data-split data-es="Atrévete<br>a ver más." style="margin-top:20px">Dare to<br>see more.</h2>
+      </div>
+      <div class="stack" data-rv>
+        <p class="t-lead dim" data-es="Reserva una demo o compra online. Una persona de verdad responde a cada mensaje en menos de 12 horas.">Book a demo or shop online. A real person answers every message within 12 hours.</p>
+        <div class="row">
+          <a class="btn btn--primary" href="vr-demo.html#book" data-magnetic><span class="roll"><span data-es="Reservar demo">Book a demo</span><span aria-hidden="true" data-es="Reservar demo">Book a demo</span></span><span class="btn__ico"><svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a>
+          <a class="btn btn--ghost" href="shop.html" data-magnetic><span class="roll"><span data-es="Ir a la tienda">Go to the shop</span><span aria-hidden="true" data-es="Ir a la tienda">Go to the shop</span></span><span class="btn__ico"><svg class="arrow" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-foot"></footer>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/products.js" defer></script>
+<script src="assets/js/mrb.js" defer></script>
+<script src="assets/js/pages.js" defer></script>
+<script src="assets/js/home.js" defer></script>
+<script type="module" src="assets/js/hero3d.js"></script>
+</body>
+</html>
