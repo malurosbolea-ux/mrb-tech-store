@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-94 -6 460 112" fill="none">
+  <defs>
+    <linearGradient id="mrbG" gradientUnits="userSpaceOnUse" x1="-60" y1="0" x2="340" y2="0">
+      <stop offset="0" stop-color="#7fe8ff"/>
+      <stop offset=".55" stop-color="#3b82ff"/>
+      <stop offset="1" stop-color="#1f4bff"/>
+    </linearGradient>
+    <mask id="mrbSlits" maskUnits="userSpaceOnUse" x="-80" y="-10" width="460" height="130">
+      <rect x="-80" y="-10" width="460" height="130" fill="#fff"/>
+      <rect x="-80" y="56" width="460" height="2" fill="#000"/>
+      <rect x="-80" y="66" width="460" height="3" fill="#000"/>
+      <rect x="-80" y="77" width="460" height="4.5" fill="#000"/>
+      <rect x="-80" y="89" width="460" height="6" fill="#000"/>
+    </mask>
+  </defs>
+  <g transform="skewX(-14)" fill="url(#mrbG)" fill-rule="evenodd" mask="url(#mrbSlits)">
+    <!-- speed trails -->
+    <rect x="-62" y="10" width="44" height="7" rx="1"/>
+    <rect x="-46" y="46" width="30" height="7" rx="1"/>
+    <rect x="-54" y="82" width="38" height="7" rx="1"/>
+    <!-- M -->
+    <path d="M0 100V0h30l30 44 30-44h30v100H94V46L66 86H54L26 46v54z"/>
+    <!-- R -->
+    <path d="M132 0h64c20 0 31 12 31 29 0 14-8 25-21 28l24 43h-29l-21-40h-22v40h-26zm26 21v19h36c6 0 8-4 8-9.5S200 21 194 21z"/>
+    <!-- B -->
+    <path d="M240 0h63c19 0 29 10 29 25 0 10-5 17-12 21 10 4 16 12 16 25 0 18-12 29-32 29h-64zm26 20v20h34c5 0 7-3 7-10s-2-10-7-10zm0 39v21h38c6 0 8-4 8-10.5s-2-10.5-8-10.5z"/>
+  </g>
+  <circle cx="349" cy="88" r="12" fill="#7fe8ff"/>
+</svg>
